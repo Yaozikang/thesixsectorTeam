@@ -1,5 +1,5 @@
 server:
-  port: 9527
+  port: 8080
 
 spring:
   datasource:
@@ -19,15 +19,15 @@ spring:
         # 数据源-1，名称为 primary
         primary:
           username: root
-          password: liudaolunhui
+          password: 123456
           driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://47.105.71.128:7832/thesixsectorteam?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+          url: jdbc:mysql://123.56.84.228:3306/sixsector?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
         # 数据源-2，名称为 test
 #        test:
 #          username: root
 #          password: 123456
 #          driver-class-name: com.mysql.cj.jdbc.Driver
-#          url: jdbc:mysql://127.0.0.1:3306/sixrealms?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+#          url: jdbc:mysql://123.56.84.228:3306/sixrealms?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
   aop:
     proxy-target-class: true
 
@@ -39,7 +39,7 @@ spring:
     time-zone: GMT+8
 
   redis:
-    host: 127.0.0.1
+    host: 123.56.84.228
     port: 6379
     password:
     jedis:
